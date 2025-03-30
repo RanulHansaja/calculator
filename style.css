@@ -1,0 +1,9 @@
+.cal_bady{
+    align-items: center;
+    background-color: blue;
+    padding-left: 10px;
+    padding-top: 30px;
+}
+body{
+    background-color: green;
+}
