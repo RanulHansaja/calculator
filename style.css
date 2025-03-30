@@ -1,9 +1,121 @@
-.cal_bady{
-    align-items: center;
-    background-color: blue;
-    padding-left: 10px;
-    padding-top: 30px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
-body{
-    background-color: green;
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121212;
+    flex-direction: column;
+}
+
+h2 {
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.cal_head{
+    color:  #32CD32;
+}
+
+.cal_bady {
+    background-color: #1c1c1c;
+    width: 320px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.key_box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.dash_board {
+    background-color: #1c1c1c;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 2.5rem;
+    color: #ffffff;
+    overflow: hidden;
+    grid-column: 1 / span 4;
+    text-align: right;
+}
+
+hr {
+    grid-column: 1 / span 4;
+    border: none;
+    border-top: 1px solid #333;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.buttons {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #ffffff;
+    font-weight: 400;
+    justify-self: center;
+}
+
+.buttons:hover {
+    filter: brightness(1.2);
+}
+
+.buttons:active {
+    filter: brightness(0.9);
+    transform: scale(0.95);
+}
+
+#fAC, #feraser, #fmodual, #fdivition {
+    background-color: #a5a5a5;
+    color: #1c1c1c;
+}
+
+#faddition, #fsubtraction, #fmultification, #fequal {
+    background-color: #32CD32; 
+}
+
+#fn0, #fn1, #fn2, #fn3, #fn4, #fn5, #fn6, #fn7, #fn8, #fn9, #fdot {
+    background-color: #505050;
+}
+
+
+br {
+    display: none;
+}
+
+
+#fn0, #fdot, #fequal {
+    align-self: start;
+}
+
+#Display {
+    width: 100%;
+    text-align: right;
+}
+
+#fn0 {
+    width: 140px;
+    grid-column: span 2;
+    border-radius: 35px;
+    text-align: left;
+    padding-left: 25px;
 }

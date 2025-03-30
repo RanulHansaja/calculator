@@ -82,16 +82,16 @@ function fmodual(){
 function fequal(){
     second_save =  document.getElementById("Display").innerHTML ;
     if(op == 1){
-        document.getElementById("Display").innerHTML = parseFloat(first_save) + parseFloat(second_save);
+        document.getElementById("Display").innerHTML = (parseFloat(first_save) + parseFloat(second_save)).toFixed(2);
     }
     if(op == 2){
-        document.getElementById("Display").innerHTML = parseFloat(first_save) - parseFloat(second_save);
+        document.getElementById("Display").innerHTML = (parseFloat(first_save) - parseFloat(second_save)).toFixed(2);
     }
     if(op == 3){
-        document.getElementById("Display").innerHTML = parseFloat(first_save) * parseFloat(second_save);
+        document.getElementById("Display").innerHTML = (parseFloat(first_save) * parseFloat(second_save)).toFixed(2);
     }
     if(op == 4){
-        document.getElementById("Display").innerHTML = parseFloat(first_save) / parseFloat(second_save);
+        document.getElementById("Display").innerHTML = (parseFloat(first_save) / parseFloat(second_save)).toFixed(2);
     }
     if(op == 5){
         document.getElementById("Display").innerHTML = parseFloat(first_save) % parseFloat(second_save);
